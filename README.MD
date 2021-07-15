@@ -8,7 +8,7 @@
 
 ## Python , Tensorflow , numpy , OpenCV , BeautifulSoup , Requests
 
-<br />
+
 
 ## Getting Started
 
@@ -36,15 +36,36 @@ Use Beautiful Soup to parse and extract information
 
 Create functions to extract from the page into lists and dictionaries.
 
+# Put all the data in a dataframe 
 
-Create CSV file(s) with the extracted information
+Dataframe is a 2-D table helps to show the data in an organised manner .
 
-Create functions for the end-to-end process of downloading, parsing, and saving CSVs.
-Execute the function with different inputs to create a dataset of CSV files.
+# Create the base html template
+
+Create the html head , body , title tag .
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+      
+    </body>
+</html>
+```
+
+# Convert dataframe to html table 
+
+Converted the dataframe to html table using to_html function .
+
+# Add the resulting table to html template 
+
+# Formatting /Beatifying the html file 
+
+Make links clickable , start index from 1 and add css styling .
+
 Verify the information in the CSV files by reading them back using Pandas.
 Document and share your work
 
-Add proper headings and documentation in your Jupyter notebook.
-Publish your Jupyter notebook to your Jovian profile
-(Optional) Write a blog post about your project and share it online.
-Notes 
