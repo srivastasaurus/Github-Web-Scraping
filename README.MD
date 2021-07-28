@@ -8,37 +8,49 @@
 
 ## Python , Tensorflow , numpy , OpenCV , BeautifulSoup , Requests
 
+# Getting Started
 
-
-## Getting Started
-
-# Pick a website and describe your objective
+## Pick a website and describe your objective
 
 Browse through different sites and pick on to scrape.  
-Identify the information you'd like to scrape from the site. Decide the format of the output CSV file.
+```
+main_url = "https://github.com/topics"
 
-# Using Beautiful Soup and Requests libraries for extraction html content
+response = requests.get(main_url) 
+```
 
-Use the requests library to download web pages
+## Using Beautiful Soup and Requests libraries for extraction html content
+
+Use the requests library to download and save web pages locally using the requests library.
 
 ```
 Requests library : pip install requests
 Beautiful Soup : pip install Beautiful Soup
 ```
 
+```
+soup = BeautifulSoup(content , "html.parser") 
+```
 
-Inspect the website's HTML source and identify the right URLs to download.
-Download and save web pages locally using the requests library.
-Create a function to automate downloading for different topics/search queries.
-Use Beautiful Soup to parse and extract information
 
-# create functions for extracting the useful information with a-tags , p-tags 
+## Inspect the website's HTML source and identify the right URLs to download like p-tags , a_tags
+```
+
+topic_title_p_tags = soup.find_all("p", {"class" : "f3 lh-condensed mb-0 mt-1 Link--primary"})
+```
+
+## Create a function to automate downloading for different topics/search queries.
 
 Create functions to extract from the page into lists and dictionaries.
+
+``` refer the python file for more information ```
 
 # Put all the data in a dataframe 
 
 Dataframe is a 2-D table helps to show the data in an organised manner .
+```
+topic_repos_df = pd.DataFrame(topic_repos_dict)
+```
 
 # Create the base html template
 
@@ -60,9 +72,7 @@ Create the html head , body , title tag .
 
 Converted the dataframe to html table using to_html function .
 
-# Add the resulting table to html template 
-
-# Formatting /Beatifying the html file 
+# Formatting /Beautifying the html file 
 
 Make links clickable , start index from 1 and add css styling .
 
