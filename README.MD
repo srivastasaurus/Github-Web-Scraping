@@ -1,7 +1,7 @@
 # INTRO
 <br />
 
-## Web scraping is the process of extracting and parsing data from websites in an automated fashion using a computer program. It's a useful technique for creating datasets for research and learning.[Want to learn more](https://towardsdatascience.com/https-medium-com-hiren787-patel-web-scraping-applications-a6f370d316f4) Follow these steps to build a web scraping project from scratch using Python and its ecosystem of libraries:
+Web scraping is the process of extracting and parsing data from websites in an automated fashion using a computer program. It's a useful technique for creating datasets for research and learning.[Want to learn more](https://towardsdatascience.com/https-medium-com-hiren787-patel-web-scraping-applications-a6f370d316f4) Follow these steps to build a web scraping project from scratch using Python and its ecosystem of libraries:
 
 # Dependencies
 <br />
